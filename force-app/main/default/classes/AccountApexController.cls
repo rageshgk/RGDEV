@@ -8,9 +8,8 @@ public class AccountApexController {
             System.debug('accccc'+acc);
             return 'success';
         }
-        catch(DMLException ex){
-           AuraHandledException e = new AuraHandledException(ex.getMessage());
-           throw e;
+        catch(Exception Ex ){
+           System.debug( 'Error ' + Ex.getMessage());
         }
         return '';        
     }
