@@ -1,0 +1,16 @@
+<aura:component >
+<aura:attribute name="oLead" type="Lead" default="{ 'sobjectType': 'Lead' }"/>
+ 
+<div class="slds-m-around--xx-large">
+	<div class="slds-form--stacked">
+   		<div class="slds-form-element">  
+    		<div class="slds-form-element__control">
+     		 <ui:inputText aura:id="leadEMail" label="Email" value="{!v.oLead.Email}" placeholder="abc@email.com..." class="slds-input"/>
+    		</div>
+  		</div>
+        <div class="slds-m-around--medium">
+          <button class="slds-button slds-button--brand" onclick="{!c.validateEmail}">Validate Email</button>
+        </div>
+	</div>
+</div>  
+</aura:component>

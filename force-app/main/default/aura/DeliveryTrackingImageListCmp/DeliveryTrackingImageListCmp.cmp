@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="delivertTrackImageList" type="String[]"/>
+    <aura:handler name="init" action="{!c.fetchImageList}" value="{!this}"/>
+    <div class="slds-align_absolute-center" style="height: 5rem;">
+        <div class="slds-size_1-of-2">
+            <div class="slds-box slds-align_absolute-center" style="height: 5rem; position: absolute; width: 500px; height: 250px; z-index: 20; top: 50%; left: 50%; margin: -100px 0 0 -200px; border-color: rgb(255, 255, 255);" >
+                <lightning:carousel disableAutoScroll="true">
+                    <aura:iteration items="{!v.delivertTrackImageList}" var="trackImage">
+                        <lightning:carouselImage width="50px" height="50px" src = "{!trackImage}" >
+                        </lightning:carouselImage>
+                    </aura:iteration>
+                  </lightning:carousel>
+            </div>
+        </div>
+    </div>
+</aura:component>

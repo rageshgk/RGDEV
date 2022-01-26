@@ -1,0 +1,12 @@
+<aura:component controller="AccountController" implements="flexipage:availableForAllPageTypes" access="global" >
+	<ltng:require styles="{!$Resource.jQuery_UI + '/jquery-ui-1.12.1/jquery-ui.min.css'}" 
+                  scripts="{!join(',', 
+                           $Resource.jquery224 ,   
+                           $Resource.jQuery_UI + '/jquery-ui-1.12.1/jquery-ui.min.js')
+                           }" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <label >Activity Date</label>
+    <aura:method name="sampleMethod" action="{!c.doAction}" description="Sample method with parameters"> 
+    <aura:attribute name="parentparam1" type="String" /> 
+	</aura:method>
+    <input type="input" class="slds-input" id="datepickerId" />
+</aura:component>

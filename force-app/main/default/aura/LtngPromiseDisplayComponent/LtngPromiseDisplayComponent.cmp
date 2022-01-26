@@ -1,0 +1,6 @@
+<aura:component >
+    <c:LtngPromiseComponent sObjectName="Contact"
+                 sObjectFieldsNames="FirstName,LastName,BirthDate,Email,Phone"
+                 whereClause="RecordType.Name = 'Employee'"
+    />
+</aura:component>

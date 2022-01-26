@@ -1,0 +1,4 @@
+<aura:component >
+    <c:AENotifier />
+    <c:AEHandler />
+</aura:component>

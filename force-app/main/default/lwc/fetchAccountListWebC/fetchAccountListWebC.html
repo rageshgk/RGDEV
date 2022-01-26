@@ -1,0 +1,12 @@
+<template>
+        <lightning-card title="Find Accounts" icon-name="custom:custom57">
+            <div class="slds-m-around_medium">
+                <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search"></lightning-input>
+                <template if:true={accountList}>
+                    <template for:each={accountList} for:item="acc">
+                        <c-account-card key={acc.id} account={acc} ></c-account-card>
+                    </template>
+                </template>
+            </div>
+        </lightning-card>
+    </template>

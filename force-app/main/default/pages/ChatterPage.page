@@ -1,0 +1,9 @@
+<apex:page controller="ChatterController">
+ 
+
+    <apex:form >
+    <apex:inputtextarea label="RichText"  richtext="true" value="{!body}" id="Body" cols="100" rows="15"/>
+    </apex:form>
+
+
+</apex:page>

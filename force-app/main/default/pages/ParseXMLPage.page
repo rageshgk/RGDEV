@@ -1,0 +1,7 @@
+<apex:page controller="ParseXMLPageController">
+  {!childNodeList}
+  <apex:repeat value="{!childNodeList}" var="childNode">
+      <apex:outputText > {!childNode} </apex:outputText>
+  
+  </apex:repeat>
+</apex:page>

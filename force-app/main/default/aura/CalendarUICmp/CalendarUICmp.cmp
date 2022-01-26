@@ -1,0 +1,17 @@
+<aura:component >
+	<lightning:layout horizontalAlign="space" multipleRows="true" aura:id="dateFieldLayout">
+    	<lightning:layoutItem largeDeviceSize="6" smallDeviceSize="12" size="12" class="slds-col slds-p-left_small">                              
+                        <lightning:helptext content="Used for setting next SLA Date"/>
+                        
+                        <!--<lightning:inputField fieldName="Activity_Date__c" aura:id="dateField" class="slds-hide"/>  --> 
+                        <label for="dateField">Activity Date</label>  
+                        <input type="input" class="slds-input" id="dateId" />
+                        
+                           </lightning:layoutItem>   
+         <lightning:layoutItem largeDeviceSize="6" smallDeviceSize="12" size="12" class="slds-col slds-p-left_small">
+                        <lightning:helptext content="Used for setting next SLA Time"/> 
+                        <lightning:select label=" Activity Time" aura:id="slotTime" required="true">
+             </lightning:select>    
+                    </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

@@ -1,0 +1,19 @@
+<aura:component controller="FetchSignatureController" >
+	<aura:handler  name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute type="List" name="currentImageList"/>
+    fsdfsdfs
+    sdfsdfsf
+    sdfsdfsdf
+    sdfsd
+    fsfsdffs
+    <div >
+        <lightning:accordion aura:id="accordion">
+            <lightning:accordionSection name="D" label="Images( X )">
+                            <div id="SignatureContainer1">
+                               
+                            </div>
+                            
+                        </lightning:accordionSection>
+        </lightning:accordion>
+    </div>
+</aura:component>

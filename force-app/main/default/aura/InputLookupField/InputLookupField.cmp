@@ -1,0 +1,35 @@
+<aura:component>
+    <aura:attribute name="customerEmailVal" type="String"/>
+    <aura:attribute name="customerPhoneVal" type="String"/>
+    <aura:attribute name="customerLoyaltyVal" type="String"/>
+    <aura:attribute name="customerSurNameVal" type="String"/>
+    <aura:attribute name="customerPostalCodeVal" type="String"/>
+    
+    <lightning:card title="Customer Search">
+        <lightning:layout horizontalAlign="left" multipleRows="true">
+            
+            <lightning:layoutItem largeDeviceSize="3" smallDeviceSize="11" size="11" class="slds-col slds-m-horizontal_large">
+                <lightning:input  value="{!v.customerEmailVal}" placeholder="Email" aura:id="customerEmail" />
+            </lightning:layoutItem>
+            <lightning:layoutItem largeDeviceSize="3" smallDeviceSize="11" size="11" class="slds-col slds-m-horizontal_large">
+                <lightning:input  value="{!v.customerPhoneVal}" placeholder="Phone Number" aura:id="customerPhone"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem largeDeviceSize="3" smallDeviceSize="11" size="11" class="slds-col slds-m-horizontal_large">
+                <lightning:input  value="{!v.customerLoyaltyVal}" placeholder="Loyalty Number" aura:id="customerLoyaltyNum" />
+            </lightning:layoutItem>
+            <lightning:layoutItem largeDeviceSize="3" smallDeviceSize="11" size="11" class="slds-col slds-m-horizontal_large">
+                <lightning:input  value="{!v.customerSurNameVal}" placeholder="Surname" aura:id="customerSurname"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem largeDeviceSize="3" smallDeviceSize="11" size="11" class="slds-col slds-m-horizontal_large">
+                <lightning:input  value="{!v.customerPostalCodeVal}" placeholder="Postal Code" aura:id="customerPostalCode" />
+            </lightning:layoutItem>
+            
+            <lightning:layoutItem largeDeviceSize="8" smallDeviceSize="11" size="11" class="slds-col slds-m-horizontal_large">
+                <br/>
+                <lightning:button label="Search" onclick="{!c.searchCustomers}" class="searchButton"/>
+                <lightning:button label="Clear" onclick="{!c.clear}"/>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

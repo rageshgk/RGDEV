@@ -1,0 +1,4 @@
+<aura:component >
+    <c:eventsHandler name="eventsHandler1"/>
+    <c:eventsHandler name="eventsHandler2"/>
+</aura:component>

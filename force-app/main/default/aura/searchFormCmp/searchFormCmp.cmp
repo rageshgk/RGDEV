@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:registerEvent name="searchEvent" type="c.searchTextEvent"/>
+    <aura:attribute name="searchKey" type="String"/>
+    <h1> Search Component</h1>
+    <ui:inputText aura:id="input" value="{!v.searchKey}"/>
+    <ui:button label="Search" press="{!c.searchText}" />
+</aura:component>

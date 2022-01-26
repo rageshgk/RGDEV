@@ -1,0 +1,12 @@
+<aura:component >
+	<ltng:require styles="/resource/slds100/assets/styles/salesforce-lightning-design-system-ltng.min.css"
+                  afterScriptsLoaded="{!c.performInit}" />
+
+    <div id="sketch">
+    <canvas class="myCanvas" width="300" height="150" style="border:1px;background: #1c1b1b;">
+    </canvas>
+    </div>
+    
+        <ui:button aura:id="clearButton" press="{!c.clearCanvas}" label="X"></ui:button> 
+
+</aura:component>
