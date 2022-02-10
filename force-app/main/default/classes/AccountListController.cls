@@ -1,6 +1,6 @@
 public with sharing class AccountListController {
     public AccountListController() {
-
+        System.debug('Account list controller called');
     }
 
     @AuraEnabled
