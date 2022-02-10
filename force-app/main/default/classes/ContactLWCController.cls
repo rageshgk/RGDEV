@@ -1,6 +1,9 @@
 public with sharing class ContactLWCController {
     public ContactLWCController() {
-
+        System.debug('Changes for SFD-300');
+        System.debug('Changes for SFD-298 ');
+        System.debug('Changes for SFD-298 second change');
+        System.debug('Changes for SFD-300 second change');
     }
 
     @AuraEnabled
