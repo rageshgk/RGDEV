@@ -8,6 +8,7 @@ public with sharing class ARBCaseListController {
         for ( Case caseRecord : [ SELECT Id, CaseNumber FROM Case WHERE CreatedDate = Today]) {
             caseList.add( caseRecord);
         }
+        System.debug('changes for SFD-298');
         return caseList;
     }
 }
