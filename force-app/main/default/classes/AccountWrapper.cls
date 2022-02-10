@@ -22,7 +22,7 @@ public with sharing class AccountWrapper {
   }
 
   public Boolean isHighPriority(){
-    if(getRoundedAvgPriceOfOpps() > 100000.00){
+    if(getRoundedAvgPriceOfOpps() > 100.00){
       return true;
     }
     return false;
